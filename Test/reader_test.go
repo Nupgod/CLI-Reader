@@ -1,7 +1,7 @@
 package test
 
 import (
-	"json-reader/internal/reader"
+	"github.com/Nupgod/CLI-Reader/internal/reader"
 	"testing"
 )
 

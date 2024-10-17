@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
-	"json-reader/internal/reader"
-	"json-reader/internal/logger"
+	"github.com/Nupgod/CLI-Reader/internal/reader"
+	"github.com/Nupgod/CLI-Reader/internal/logger"
 )
 
 func main() {
@@ -47,12 +47,11 @@ func main() {
 		logger.Log("Success read data from stdin")
 		fmt.Printf("Success read data from stdin\n")
 	}
-	
 	// Calculation of total sum
 	sum := Summarizer(numbers)
 	logger.Log(fmt.Sprintf("Total sum: %d", sum))
 	fmt.Printf("Total sum: %d\n", sum)
-
+	
 	// Make HTTP GET request ifflag -url is set.
 	if *url != " " {
 		resp, err := http.Get(*url)
