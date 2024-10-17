@@ -1,3 +1,3 @@
-module github.com/Nupgod/CLI-Reader
+module json-reader
 
 go 1.21.6

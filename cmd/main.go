@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
-	"github.com/Nupgod/CLI-Reader/internal/reader"
-	"github.com/Nupgod/CLI-Reader/internal/logger"
+	"json-reader/internal/reader"
+	"json-reader/internal/logger"
 )
 
 func main() {
